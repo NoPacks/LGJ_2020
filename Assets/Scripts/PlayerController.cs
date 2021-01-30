@@ -2,15 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerSkills
+{
+    doubleJump,
+    dash
+}
+
 public class PlayerController : MonoBehaviour
 {
     // Config
     [SerializeField] float runSpeed = 5.0f;
-    [SerializeField] float jumpSpeed = 25.0f;
-    [SerializeField] bool hasDoubleJump = true;
-    [SerializeField] float startDashTime = 0.5f;
+    [SerializeField] float jumpSpeed = 7.0f;
+    [SerializeField] float startDashTime = 0.1f;
     [SerializeField] float dashSpeed = 50.0f;
     [SerializeField] float startDashCoolDown = 2.0f;
+    [SerializeField] ParticleSystem skillParticles;
+    public bool hasDoubleJump = false;
+    public bool hasDash= false;
 
 
     float dashTime;
@@ -39,7 +47,10 @@ public class PlayerController : MonoBehaviour
     {
         Run();
         Jump();
-        Dash();
+        if (hasDash)
+        {
+            Dash();
+        }
     }
 
 
@@ -115,5 +126,26 @@ public class PlayerController : MonoBehaviour
         {
             dashCoolDown -= Time.deltaTime;
         }
+    }
+
+    public void GetNewSkill(PlayerSkills altarSkill)
+    {
+        StartCoroutine("ShowSkillAnimation");
+
+        if(altarSkill == PlayerSkills.dash)
+        {
+            hasDash = true;
+        }
+        else if(altarSkill == PlayerSkills.doubleJump)
+        {
+            hasDoubleJump = true;
+        }
+    }
+
+    IEnumerator ShowSkillAnimation()
+    {
+        ParticleSystem partycleSystem = GameObject.Instantiate(skillParticles, transform.position, transform.rotation);
+        yield return new WaitForSeconds(0.6f);
+        Destroy(partycleSystem.gameObject);
     }
 }
