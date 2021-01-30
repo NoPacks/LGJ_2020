@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Interactables
+    uniqueID: 2756593071
+    locked: 0
+  - name: World
+    uniqueID: 3484710591
+    locked: 0
+  - name: Player
+    uniqueID: 1304809977
+    locked: 0

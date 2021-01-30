@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float dashSpeed = 50.0f;
     [SerializeField] float startDashCoolDown = 2.0f;
     [SerializeField] ParticleSystem skillParticles;
+    [SerializeField] ParticleSystem dashParticles;
     public bool hasDoubleJump = false;
     public bool hasDash= false;
 
@@ -26,15 +27,28 @@ public class PlayerController : MonoBehaviour
     float dashDirection;
     bool canDoubleJump = true;
 
+    float verticalDirection;
+
+    private const string STATE_RUNNING = "Running";
+    private const string STATE_FALLING = "Falling";
+    private const string STATE_JUMPING = "Jumping";
+    private const string STATE_GROUND = "Grounded";
+
     // Cached componenet references
     Rigidbody2D myRigidbody;
+    Animator myAnimator;
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
+
+    private void Awake()
+    {
+        myRigidbody = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        myRigidbody = GetComponent<Rigidbody2D>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
 
@@ -51,6 +65,43 @@ public class PlayerController : MonoBehaviour
         {
             Dash();
         }
+        FlipSprite();
+
+        StartJumpFallAnimation();
+    }
+
+    private void StartJumpFallAnimation()
+    {
+        if (!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            verticalDirection = myRigidbody.velocity.y;
+            if(verticalDirection == 0)
+            {
+                myAnimator.SetBool(STATE_GROUND, true);
+                myAnimator.SetBool(STATE_FALLING, false);
+                myAnimator.SetBool(STATE_JUMPING, false);
+            }
+            else if (verticalDirection > 0)
+            {
+                myAnimator.SetBool(STATE_GROUND, false);
+                myAnimator.SetBool(STATE_FALLING, false);
+                myAnimator.SetBool(STATE_JUMPING, true);
+            }
+            else
+            {
+                myAnimator.SetBool(STATE_GROUND, false);
+                myAnimator.SetBool(STATE_FALLING, true);
+                myAnimator.SetBool(STATE_JUMPING, false);
+            }
+
+        }
+        else
+        {
+            myAnimator.SetBool(STATE_GROUND, true);
+            myAnimator.SetBool(STATE_FALLING, false);
+            myAnimator.SetBool(STATE_JUMPING, false);
+        }
+
     }
 
 
@@ -69,9 +120,23 @@ public class PlayerController : MonoBehaviour
             dashDirection = 1;
         }
 
-
+        if (myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            bool playerHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+            myAnimator.SetBool(STATE_RUNNING, playerHorizontalSpeed);
+        }
+        else
+        {
+            myAnimator.SetBool(STATE_RUNNING, false);
+        }
+    }
+    private void FlipSprite()
+    {
         bool playerHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
-        // Add animation control here, use playerHorizontalSpeed as trigger
+        if (playerHorizontalSpeed)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
+        }
     }
 
     private void Jump()
@@ -117,6 +182,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
+                    StartCoroutine("ShowDashAnimation");
                     dashTime -= Time.deltaTime;
                     myRigidbody.velocity = Vector2.right * dashDirection * dashSpeed;
                 } 
@@ -145,6 +211,13 @@ public class PlayerController : MonoBehaviour
     IEnumerator ShowSkillAnimation()
     {
         ParticleSystem partycleSystem = GameObject.Instantiate(skillParticles, transform.position, transform.rotation);
+        yield return new WaitForSeconds(0.6f);
+        Destroy(partycleSystem.gameObject);
+    }
+
+    IEnumerator ShowDashAnimation()
+    {
+        ParticleSystem partycleSystem = GameObject.Instantiate(dashParticles, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.6f);
         Destroy(partycleSystem.gameObject);
     }
