@@ -145,6 +145,9 @@ MonoBehaviour:
     type: 3}
   dashParticles: {fileID: 2266909083391062013, guid: 3ce4e0a3ca8068a46934bf0da9ec88ab,
     type: 3}
+  levelLoader: {fileID: 0}
+  restartParticlesEffect: {fileID: 1171320246385015579, guid: b7a1c62a9faa95540a4ab55f5bbd0886,
+    type: 3}
   hasDoubleJump: 0
   hasDash: 1
 --- !u!61 &2342693290938725022
