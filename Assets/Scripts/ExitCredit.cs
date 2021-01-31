@@ -15,7 +15,14 @@ public class ExitCredit : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            levelLoader.LoadMainMenu();
+            StartCoroutine(GoToMainMenu());
         }
+    }
+
+    IEnumerator GoToMainMenu()
+    {
+        Debug.Log("MainMenu");
+        yield return new WaitForSeconds(3.0f);
+        levelLoader.LoadMainMenu();
     }
 }

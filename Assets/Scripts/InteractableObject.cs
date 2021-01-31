@@ -9,6 +9,7 @@ public class InteractableObject : MonoBehaviour
 
     MessageInteraction messageInteraction;
     bool triggerObjectEvent = false;
+    bool isFinalInteraction = false;
     int index = 0;
     // Start is called before the first frame update
     private void Start()
@@ -30,11 +31,16 @@ public class InteractableObject : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
         messageInteraction.CloseMessage();
         triggerObjectEvent = false;
         index = 0;
+
+        if (isFinalInteraction)
+        {
+            LevelLoader.FinalizeGame();
+        }
     }
 
     private void ShowNextMessage()
@@ -53,6 +59,7 @@ public class InteractableObject : MonoBehaviour
                     messageInteraction.CloseMessage();
                     index = 0;
                     triggerObjectEvent = false;
+                    isFinalInteraction = true;
                 }
             }
         }

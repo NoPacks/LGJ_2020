@@ -53,4 +53,9 @@ public class LevelLoader : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public static void FinalizeGame()
+    {
+        SceneManager.LoadScene("CreditsScene");
+    }
 }
