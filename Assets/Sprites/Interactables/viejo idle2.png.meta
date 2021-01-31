@@ -114,12 +114,12 @@ TextureImporter:
       name: viejo idle2_0
       rect:
         serializedVersion: 2
-        x: 761
-        y: 555
-        width: 359
+        x: 767
+        y: 560
+        width: 336
         height: 490
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -135,12 +135,12 @@ TextureImporter:
       name: viejo idle2_2
       rect:
         serializedVersion: 2
-        x: 1142
-        y: 553
-        width: 382
-        height: 496
+        x: 1170
+        y: 555
+        width: 336
+        height: 490
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: viejo idle2_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 18
         y: 555
-        width: 362
-        height: 477
+        width: 336
+        height: 490
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -177,12 +177,12 @@ TextureImporter:
       name: viejo idle2_6
       rect:
         serializedVersion: 2
-        x: 368
-        y: 553
-        width: 384
-        height: 477
+        x: 379
+        y: 555
+        width: 336
+        height: 490
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,12 +198,12 @@ TextureImporter:
       name: viejo idle2_17
       rect:
         serializedVersion: 2
-        x: 0
-        y: 36
-        width: 362
-        height: 483
+        x: 20
+        y: 35
+        width: 336
+        height: 490
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: viejo idle2_18
       rect:
         serializedVersion: 2
-        x: 368
-        y: 36
-        width: 384
-        height: 481
+        x: 379
+        y: 35
+        width: 336
+        height: 490
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,12 +240,12 @@ TextureImporter:
       name: viejo idle2_20
       rect:
         serializedVersion: 2
-        x: 761
-        y: 36
-        width: 356
-        height: 483
+        x: 763
+        y: 35
+        width: 336
+        height: 490
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
