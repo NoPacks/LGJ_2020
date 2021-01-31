@@ -2,19 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class MessageInteraction : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textmeshPro;
+    [SerializeField] Image dialogBox;
     // Start is called before the first frame update
     void Start()
     {
-        textmeshPro.enabled = false;
+        dialogBox.gameObject.SetActive(false);
     }
 
     public void AskForInteraction()
     {
-        textmeshPro.enabled = true;
+        dialogBox.gameObject.SetActive(true);
         textmeshPro.SetText("Interactuar?");
     }
     public void ShowMessage()
@@ -24,7 +26,7 @@ public class MessageInteraction : MonoBehaviour
 
     public void CloseMessage()
     {
-        textmeshPro.enabled = false;
+        dialogBox.gameObject.SetActive(false);
     }
 
     public void DisplayInteractableMessage(string message)

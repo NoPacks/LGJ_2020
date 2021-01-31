@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7ebc379d0425c14ebebf0340e559562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessageCanvas: {fileID: 0}
+  messageCanvas: {fileID: 0}
   messages:
   - Mensaje 1
   - Mensaje 2
