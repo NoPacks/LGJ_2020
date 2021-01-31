@@ -904,7 +904,7 @@ PrefabInstance:
     - target: {fileID: 3361307552473290928, guid: d746af5533e287b4eb823cae19f010f4,
         type: 3}
       propertyPath: orthographic size
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3361307552473290941, guid: d746af5533e287b4eb823cae19f010f4,
         type: 3}
@@ -3531,7 +3531,7 @@ PrefabInstance:
     - target: {fileID: 7208592934542004061, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.82518
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004061, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
@@ -3596,22 +3596,22 @@ PrefabInstance:
     - target: {fileID: 7208592934542004063, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.1724656
+      value: 0.8815573
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004063, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: m_Size.y
-      value: 2.3884761
+      value: 1.4225912
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004063, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.11898808
+      value: -0.26444218
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004063, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.7557149
+      value: 0.27277258
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f5a1e9eef8540c439231ec252767e33, type: 3}
@@ -29637,7 +29637,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 24
-      m_TileSpriteIndex: 31
+      m_TileSpriteIndex: 32
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -30987,7 +30987,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 12
-      m_TileSpriteIndex: 30
+      m_TileSpriteIndex: 31
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -33255,7 +33255,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 27
-      m_TileSpriteIndex: 27
+      m_TileSpriteIndex: 30
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -41346,18 +41346,18 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: fd5386c6468d3db449e78fd525cfe0bf, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: df10d7f0177039c4e92e9ab94753d0fb, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 21300000, guid: e7993fe2c04ec7f40b076fe3d67dd795, type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: fd5386c6468d3db449e78fd525cfe0bf, type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: f783f32f56f6c6442ad5d49cb263013e, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: f9838d18dc78a914fb6d5f33f0f48823, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 1cde776f8bcee9342aced2d389b0e856, type: 3}
   m_TileMatrixArray:
@@ -42663,42 +42663,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2342693290938724994, guid: c9819afea7f364e4ea3bc0e5877f1bd7,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.7012284
-      objectReference: {fileID: 0}
-    - target: {fileID: 2342693290938724994, guid: c9819afea7f364e4ea3bc0e5877f1bd7,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.15289891
-      objectReference: {fileID: 0}
     - target: {fileID: 2342693290938724996, guid: c9819afea7f364e4ea3bc0e5877f1bd7,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2342693290938724996, guid: c9819afea7f364e4ea3bc0e5877f1bd7,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2342693290938725023, guid: c9819afea7f364e4ea3bc0e5877f1bd7,
-        type: 3}
-      propertyPath: hasDash
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2342693290938725023, guid: c9819afea7f364e4ea3bc0e5877f1bd7,
         type: 3}
       propertyPath: levelLoader
       value: 
       objectReference: {fileID: 960196758}
-    - target: {fileID: 2342693290938725023, guid: c9819afea7f364e4ea3bc0e5877f1bd7,
-        type: 3}
-      propertyPath: restartParticlesEffect
-      value: 
-      objectReference: {fileID: 1171320246385015579, guid: b7a1c62a9faa95540a4ab55f5bbd0886,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9819afea7f364e4ea3bc0e5877f1bd7, type: 3}
 --- !u!95 &1561397976 stripped

@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     public bool hasDoubleJump = false;
     public bool hasDash= false;
 
+    bool singing;
+    CircleCollider2D singArea;
 
     float dashTime;
     float dashCoolDown;
@@ -53,22 +55,27 @@ public class PlayerController : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
+        singArea = GetComponentInChildren<CircleCollider2D>();
 
+        singArea.enabled = false;
         dashCoolDown = startDashCoolDown;
         dashTime = startDashTime;
+
+        singing = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Run();
-        Jump();
-        if (hasDash)
-        {
-            Dash();
+        Sing();
+        if (!singing) {
+            Run();
+            Jump();
+            if (hasDash) {
+                Dash();
+            }
+            FlipSprite();
         }
-        FlipSprite();
-
         StartJumpFallAnimation();
     }
 
@@ -244,5 +251,13 @@ public class PlayerController : MonoBehaviour
         ParticleSystem partycleSystem = GameObject.Instantiate(dashParticles, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.6f);
         Destroy(partycleSystem.gameObject);
+    }
+
+    private void Sing() {
+        if (Input.GetKeyDown(KeyCode.Q)) {
+            singArea.enabled = true;
+        } else if (Input.GetKeyUp(KeyCode.Q)){
+            singArea.enabled = false;
+        }
     }
 }
