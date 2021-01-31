@@ -28250,6 +28250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159585472408080185, guid: 75b59a51fa0696b4a95b94b44cfeefb6,
         type: 3}
+      propertyPath: isFinalAltar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 159585472408080185, guid: 75b59a51fa0696b4a95b94b44cfeefb6,
+        type: 3}
       propertyPath: messageCanvas
       value: 
       objectReference: {fileID: 349272295}
@@ -28626,7 +28631,7 @@ PrefabInstance:
     - target: {fileID: 3361307551027545104, guid: d746af5533e287b4eb823cae19f010f4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8812897
+      value: -2.8812895
       objectReference: {fileID: 0}
     - target: {fileID: 3361307551027545104, guid: d746af5533e287b4eb823cae19f010f4,
         type: 3}
@@ -28666,7 +28671,7 @@ PrefabInstance:
     - target: {fileID: 3361307552473290941, guid: d746af5533e287b4eb823cae19f010f4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00000047683716
+      value: 0.00000071525574
       objectReference: {fileID: 0}
     - target: {fileID: 3361307552473290941, guid: d746af5533e287b4eb823cae19f010f4,
         type: 3}

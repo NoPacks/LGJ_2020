@@ -243,7 +243,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Titulo del juego
+  m_text: Lily's Forest Adventure
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea7e52a16a379d14e9d3285f51786144, type: 2}
   m_sharedMaterial: {fileID: 2905834140400563763, guid: ea7e52a16a379d14e9d3285f51786144,
@@ -648,7 +648,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5275625, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.49993896}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0.49993896}
   m_SizeDelta: {x: 0.08325195, y: -1}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &701592716

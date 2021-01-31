@@ -6,6 +6,7 @@ public class InteractableObject : MonoBehaviour
 {
     [SerializeField] Canvas messageCanvas;
     [SerializeField] string[] messages;
+    [SerializeField] bool isFinalAltar = false;
 
     MessageInteraction messageInteraction;
     bool triggerObjectEvent = false;
@@ -37,7 +38,7 @@ public class InteractableObject : MonoBehaviour
         triggerObjectEvent = false;
         index = 0;
 
-        if (isFinalInteraction)
+        if (isFinalInteraction && isFinalAltar)
         {
             LevelLoader.FinalizeGame();
         }
