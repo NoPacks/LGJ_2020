@@ -16,7 +16,7 @@ TagManager:
   - Ground
   - Background
   - Player
-  - 
+  - FRONT
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1304809977
+    locked: 0
+  - name: Front
+    uniqueID: 1179695919
     locked: 0
