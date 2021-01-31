@@ -123,3 +123,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MessageCanvas: {fileID: 0}
   altarSkill: 0
+  messages:
+  - "\xBFCambiar tu alma por poder?"

@@ -7,10 +7,12 @@ public class AltarInteraction : MonoBehaviour
 {
     [SerializeField] Canvas MessageCanvas;
     [SerializeField] PlayerSkills altarSkill;
+    [SerializeField] string[] messages;
 
     bool triggerObjectEvent = false;
     bool playerWantInteract = false;
     MessageInteraction messageInteraction;
+    int index = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +22,6 @@ public class AltarInteraction : MonoBehaviour
     private void Update()
     {
         InteractWithObject();
-        if (Input.GetButtonDown("Fire2"))
-        {
-            Debug.Log("Fire2");
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -52,24 +50,19 @@ public class AltarInteraction : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire2"))
             {
-                Invoke("ShowObjectMessage", 0.2f);
+                if (index < messages.Length)
+                {
+                    messageInteraction.DisplayInteractableMessage(messages[index]);
+                    index += 1;
+                }
+                else
+                {
+                    messageInteraction.CloseMessage();
+                    GameObject.Find("Player").GetComponent<PlayerController>().GetNewSkill(altarSkill);
+                    index = 0;
+                    triggerObjectEvent = false;
+                }
             }
         }
-
-        if(playerWantInteract)
-        {
-            messageInteraction.ShowMessage();
-            if (Input.GetButtonDown("Fire2"))
-            {
-                GameObject.Find("Player").GetComponent<PlayerController>().GetNewSkill(altarSkill);
-                messageInteraction.CloseMessage();
-            }
-        }
-
-    }
-
-    private void ShowObjectMessage()
-    {
-        playerWantInteract = true;
     }
 }

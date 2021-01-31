@@ -28,6 +28,14 @@ public class LevelLoader : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("StartScreen");
     }
+    public void LoadYouLose()
+    {
+        SceneManager.LoadScene("LoseScreen");
+    }
+    public void LoadCredits()
+    {
+        SceneManager.LoadScene("CreditsScene");
+    }
 
     public void RestartScene()
     {
@@ -40,10 +48,6 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    public void LoadYouLose()
-    {
-        SceneManager.LoadScene("LoseScreen");
-    }
 
     public void QuitGame()
     {

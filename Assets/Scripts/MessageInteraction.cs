@@ -19,10 +19,6 @@ public class MessageInteraction : MonoBehaviour
         dialogBox.gameObject.SetActive(true);
         textmeshPro.SetText("Interactuar?");
     }
-    public void ShowMessage()
-    {
-        textmeshPro.SetText("¿Rezar al altar para seguir avanzando?");
-    }
 
     public void CloseMessage()
     {
@@ -30,6 +26,15 @@ public class MessageInteraction : MonoBehaviour
     }
 
     public void DisplayInteractableMessage(string message)
+    {
+        textmeshPro.SetText(message);
+    }
+
+    public void OpenMessage()
+    {
+        dialogBox.gameObject.SetActive(true);
+    }
+    public void DisplayGenericDialog(string message)
     {
         textmeshPro.SetText(message);
     }
