@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float startDashCoolDown = 2.0f;
     [SerializeField] ParticleSystem skillParticles;
     [SerializeField] ParticleSystem dashParticles;
+    [SerializeField] LevelLoader levelLoader;
+    [SerializeField] ParticleSystem restartParticlesEffect;
     public bool hasDoubleJump = false;
     public bool hasDash= false;
 
@@ -68,6 +70,21 @@ public class PlayerController : MonoBehaviour
         FlipSprite();
 
         StartJumpFallAnimation();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Hazzards"))
+        {
+            StartCoroutine(ProcessPlayerDeath());
+        }
+    }
+    IEnumerator ProcessPlayerDeath()
+    {
+        GameObject.Instantiate(restartParticlesEffect, transform.position, transform.rotation);
+        Time.timeScale = 0.2f;
+        yield return new WaitForSeconds(0.2f);
+        levelLoader.RestartScene();
     }
 
     private void StartJumpFallAnimation()

@@ -26,6 +26,6 @@ public class LevelExit : MonoBehaviour
 
     private void ShowExitEffect()
     {
-        ParticleSystem partycleSystem = GameObject.Instantiate(particlesEffect, transform.position, transform.rotation);
+        GameObject.Instantiate(particlesEffect, transform.position, transform.rotation);
     }
 }
