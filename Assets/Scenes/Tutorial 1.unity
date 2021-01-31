@@ -2381,6 +2381,11 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.013202131
       objectReference: {fileID: 0}
+    - target: {fileID: 4391703388130291873, guid: a67b523aae8248b4b92ed6ea7340c976,
+        type: 3}
+      propertyPath: MessageCanvas
+      value: 
+      objectReference: {fileID: 1165841359}
     - target: {fileID: 4391703388130291874, guid: a67b523aae8248b4b92ed6ea7340c976,
         type: 3}
       propertyPath: m_Name
@@ -3044,7 +3049,7 @@ PrefabInstance:
     - target: {fileID: 7208592934542004049, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: m_Name
-      value: GenericMessageObject
+      value: viejo1
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004049, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
@@ -3139,33 +3144,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004062, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
+      propertyPath: messages.Array.data[0]
+      value: Lili-                                                Ah!..Una persona..eso
+        es bueno
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208592934542004062, guid: 6f5a1e9eef8540c439231ec252767e33,
+        type: 3}
+      propertyPath: messages.Array.data[1]
+      value: ?-                                                   No una persona
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208592934542004062, guid: 6f5a1e9eef8540c439231ec252767e33,
+        type: 3}
       propertyPath: messages.Array.data[2]
-      value: Mensaje 2
+      value: ?-                                                   solo un cascaron
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004062, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: messages.Array.data[3]
-      value: Mensaje 2
+      value: Lili-                                              ...Que haces aqui?
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004062, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: messages.Array.data[4]
-      value: Mensaje 2
+      value: ?-                                                    Espero.
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004062, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: messages.Array.data[5]
-      value: Mensaje 2
+      value: Lili-                                                 A quien?
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004062, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: messages.Array.data[6]
-      value: Mensaje 2
+      value: ?-                                                    No lo entenderias,
+        je je
       objectReference: {fileID: 0}
     - target: {fileID: 7208592934542004062, guid: 6f5a1e9eef8540c439231ec252767e33,
         type: 3}
       propertyPath: messages.Array.data[7]
-      value: Mensaje 2
+      value: Lili-                                                 ....
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208592934542004063, guid: 6f5a1e9eef8540c439231ec252767e33,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.7777731
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208592934542004063, guid: 6f5a1e9eef8540c439231ec252767e33,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.1264701
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208592934542004063, guid: 6f5a1e9eef8540c439231ec252767e33,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.09833261
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208592934542004063, guid: 6f5a1e9eef8540c439231ec252767e33,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1562959
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208592934542004063, guid: 6f5a1e9eef8540c439231ec252767e33,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208592934542004063, guid: 6f5a1e9eef8540c439231ec252767e33,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.6333333
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f5a1e9eef8540c439231ec252767e33, type: 3}
@@ -4356,6 +4403,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548724450339017066, guid: 044c951ff774b8a4290517f2291c5dcd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4548724450339017069, guid: 044c951ff774b8a4290517f2291c5dcd,
         type: 3}
