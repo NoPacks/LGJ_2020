@@ -250,3 +250,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 36299344895221664}
+  noteTile: {fileID: 36299344033675253}
