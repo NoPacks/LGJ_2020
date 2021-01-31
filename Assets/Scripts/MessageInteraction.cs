@@ -19,11 +19,16 @@ public class MessageInteraction : MonoBehaviour
     }
     public void ShowMessage()
     {
-        textmeshPro.SetText("Deseas obtener poder a cambio de tu alma?");
+        textmeshPro.SetText("¿Rezar al altar para seguir avanzando?");
     }
 
     public void CloseMessage()
     {
         textmeshPro.enabled = false;
+    }
+
+    public void DisplayInteractableMessage(string message)
+    {
+        textmeshPro.SetText(message);
     }
 }

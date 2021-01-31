@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ObjectInteraction : MonoBehaviour
+public class AltarInteraction : MonoBehaviour
 {
     [SerializeField] Canvas MessageCanvas;
     [SerializeField] PlayerSkills altarSkill;

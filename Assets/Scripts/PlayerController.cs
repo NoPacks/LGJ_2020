@@ -43,12 +43,12 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
-        myAnimator = GetComponent<Animator>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        myAnimator = GetComponent<Animator>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
 
@@ -185,7 +185,11 @@ public class PlayerController : MonoBehaviour
                     StartCoroutine("ShowDashAnimation");
                     dashTime -= Time.deltaTime;
                     myRigidbody.velocity = Vector2.right * dashDirection * dashSpeed;
-                } 
+                }
+            }
+            else
+            {
+                dashCoolDown = 0;
             }
         }
         else
@@ -196,6 +200,7 @@ public class PlayerController : MonoBehaviour
 
     public void GetNewSkill(PlayerSkills altarSkill)
     {
+        myRigidbody.velocity += Vector2.up * 8;
         StartCoroutine("ShowSkillAnimation");
 
         if(altarSkill == PlayerSkills.dash)
@@ -210,6 +215,8 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator ShowSkillAnimation()
     {
+        myAnimator.SetTrigger("Praying");
+        yield return new WaitForSeconds(0.3f);
         ParticleSystem partycleSystem = GameObject.Instantiate(skillParticles, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.6f);
         Destroy(partycleSystem.gameObject);

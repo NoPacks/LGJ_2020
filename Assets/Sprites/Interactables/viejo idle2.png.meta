@@ -1,31 +1,7 @@
 fileFormatVersion: 2
-guid: 861dfe23bf724eb48810c3531c47259a
+guid: 44d14292818d4a6479bc31eb7e3bdea9
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 7429775615544826578
-    second: jump-landing_0
-  - first:
-      213: -8833361649027057281
-    second: jump-landing_1
-  - first:
-      213: -3774850797617740851
-    second: jump-landing_2
-  - first:
-      213: 5595932528438564993
-    second: jump-landing_5
-  - first:
-      213: 1384268288592047148
-    second: jump-landing_8
-  - first:
-      213: -7662833833051249885
-    second: jump-landing_9
-  - first:
-      213: 2749636484018661401
-    second: jump-landing_10
-  - first:
-      213: -4741527498909007986
-    second: jump-landing_11
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,169 +111,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump-landing_0
+      name: viejo idle2_0
       rect:
         serializedVersion: 2
-        x: 60
-        y: 929
-        width: 460
-        height: 635
+        x: 761
+        y: 555
+        width: 359
+        height: 490
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2da9865ce8ddb1760800000000000000
-      internalID: 7429775615544826578
+      spriteID: 678eac38d27070bb0800000000000000
+      internalID: -4969995771714017162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump-landing_1
+      name: viejo idle2_2
       rect:
         serializedVersion: 2
-        x: 597
-        y: 919
-        width: 488
-        height: 654
+        x: 1142
+        y: 553
+        width: 382
+        height: 496
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f79fe21a168996580800000000000000
-      internalID: -8833361649027057281
+      spriteID: 782bdbabea6dbcdd0800000000000000
+      internalID: -2464640325109566841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump-landing_2
+      name: viejo idle2_3
       rect:
         serializedVersion: 2
-        x: 1749
-        y: 940
-        width: 443
-        height: 622
+        x: 0
+        y: 555
+        width: 362
+        height: 477
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc305e713390d9bc0800000000000000
-      internalID: -3774850797617740851
+      spriteID: e22ff1ce34b6cb7c0800000000000000
+      internalID: -4054247625071791570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump-landing_5
+      name: viejo idle2_6
       rect:
         serializedVersion: 2
-        x: 1155
-        y: 919
-        width: 538
-        height: 551
+        x: 368
+        y: 553
+        width: 384
+        height: 477
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18852a07cfeb8ad40800000000000000
-      internalID: 5595932528438564993
+      spriteID: ee47b72f755a9d3c0800000000000000
+      internalID: -4334251369218476818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump-landing_8
+      name: viejo idle2_17
       rect:
         serializedVersion: 2
-        x: 26
-        y: 191
-        width: 564
-        height: 665
+        x: 0
+        y: 36
+        width: 362
+        height: 483
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2ced5f9ca8e53310800000000000000
-      internalID: 1384268288592047148
+      spriteID: 761a08fb099515da0800000000000000
+      internalID: -5957882353811414681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump-landing_9
+      name: viejo idle2_18
       rect:
         serializedVersion: 2
-        x: 618
-        y: 173
-        width: 463
-        height: 647
+        x: 368
+        y: 36
+        width: 384
+        height: 481
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 323a2207a3528a590800000000000000
-      internalID: -7662833833051249885
+      spriteID: 083aa91e4e9ed8a10800000000000000
+      internalID: 1913442585949152128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump-landing_10
+      name: viejo idle2_20
       rect:
         serializedVersion: 2
-        x: 1155
-        y: 191
-        width: 538
-        height: 551
+        x: 761
+        y: 36
+        width: 356
+        height: 483
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 918e26360dba82620800000000000000
-      internalID: 2749636484018661401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-landing_11
-      rect:
-        serializedVersion: 2
-        x: 1790
-        y: 169
-        width: 460
-        height: 634
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8f38c68cd5b23eb0800000000000000
-      internalID: -4741527498909007986
+      spriteID: a2a42115da1f69340800000000000000
+      internalID: 4870345773739559466
       vertices: []
       indices: 
       edges: []

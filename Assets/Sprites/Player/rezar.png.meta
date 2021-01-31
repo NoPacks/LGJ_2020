@@ -1,31 +1,52 @@
 fileFormatVersion: 2
-guid: 861dfe23bf724eb48810c3531c47259a
+guid: bf27f23c371df0a44b730d6b4af1ee2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7429775615544826578
-    second: jump-landing_0
+      213: 8157576205147081554
+    second: rezar_0
   - first:
-      213: -8833361649027057281
-    second: jump-landing_1
+      213: -615152120564116357
+    second: rezar_1
   - first:
-      213: -3774850797617740851
-    second: jump-landing_2
+      213: 3403530841519856619
+    second: rezar_2
   - first:
-      213: 5595932528438564993
-    second: jump-landing_5
+      213: -2117535393997978282
+    second: rezar_3
   - first:
-      213: 1384268288592047148
-    second: jump-landing_8
+      213: -4951153631668019453
+    second: rezar_4
   - first:
-      213: -7662833833051249885
-    second: jump-landing_9
+      213: -2041796576732017858
+    second: rezar_5
   - first:
-      213: 2749636484018661401
-    second: jump-landing_10
+      213: 6101264650807979846
+    second: rezar_6
   - first:
-      213: -4741527498909007986
-    second: jump-landing_11
+      213: 7628182938657371317
+    second: rezar_7
+  - first:
+      213: -558010389659944172
+    second: rezar_8
+  - first:
+      213: 6390453417305667387
+    second: rezar_9
+  - first:
+      213: 4843134541545553176
+    second: rezar_10
+  - first:
+      213: 4623524270016189127
+    second: rezar_11
+  - first:
+      213: -6220240478641197672
+    second: rezar_12
+  - first:
+      213: 7942353559134283618
+    second: rezar_13
+  - first:
+      213: -3510535233852666173
+    second: rezar_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,158 +156,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump-landing_0
+      name: rezar_0
       rect:
         serializedVersion: 2
-        x: 60
-        y: 929
-        width: 460
-        height: 635
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2da9865ce8ddb1760800000000000000
-      internalID: 7429775615544826578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-landing_1
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 919
-        width: 488
-        height: 654
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f79fe21a168996580800000000000000
-      internalID: -8833361649027057281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-landing_2
-      rect:
-        serializedVersion: 2
-        x: 1749
-        y: 940
-        width: 443
-        height: 622
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc305e713390d9bc0800000000000000
-      internalID: -3774850797617740851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-landing_5
-      rect:
-        serializedVersion: 2
-        x: 1155
-        y: 919
-        width: 538
-        height: 551
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18852a07cfeb8ad40800000000000000
-      internalID: 5595932528438564993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-landing_8
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 191
-        width: 564
-        height: 665
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2ced5f9ca8e53310800000000000000
-      internalID: 1384268288592047148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-landing_9
-      rect:
-        serializedVersion: 2
-        x: 618
-        y: 173
-        width: 463
-        height: 647
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 323a2207a3528a590800000000000000
-      internalID: -7662833833051249885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-landing_10
-      rect:
-        serializedVersion: 2
-        x: 1155
-        y: 191
-        width: 538
-        height: 551
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 918e26360dba82620800000000000000
-      internalID: 2749636484018661401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump-landing_11
-      rect:
-        serializedVersion: 2
-        x: 1790
-        y: 169
+        x: 120
+        y: 1451
         width: 460
         height: 634
       alignment: 0
@@ -296,8 +170,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8f38c68cd5b23eb0800000000000000
-      internalID: -4741527498909007986
+      spriteID: 25b88ff7658853170800000000000000
+      internalID: 8157576205147081554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rezar_2
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1431
+        width: 488
+        height: 654
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb90e68445cb3f20800000000000000
+      internalID: 3403530841519856619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rezar_3
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1430
+        width: 538
+        height: 621
+      alignment: 9
+      pivot: {x: 0.50000024, y: 0.4879383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6550f6147c00d92e0800000000000000
+      internalID: -2117535393997978282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rezar_4
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 1430
+        width: 538
+        height: 608
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fda0c1108f94bb0800000000000000
+      internalID: -4951153631668019453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rezar_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 851
+        width: 538
+        height: 586
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b43e5487ffbcd960800000000000000
+      internalID: 7628182938657371317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rezar_8
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 851
+        width: 538
+        height: 586
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b775fc18c8148f0800000000000000
+      internalID: -558010389659944172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rezar_9
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 851
+        width: 538
+        height: 579
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b377f2466837fa850800000000000000
+      internalID: 6390453417305667387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rezar_11
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 851
+        width: 538
+        height: 579
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c256bcb3de0a2040800000000000000
+      internalID: 4623524270016189127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rezar_13
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 234
+        width: 538
+        height: 591
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26722cc4b78e83e60800000000000000
+      internalID: 7942353559134283618
       vertices: []
       indices: 
       edges: []
